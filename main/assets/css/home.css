@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+body{
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+
+    & img{
+        width: 100px;
+        height: auto;
+    }
+
+    & nav ul {
+        display: flex;
+
+        & li{
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: .6s;
+            margin: 0px 5px;
+            border-radius: 30px;
+        }
+
+        & li:hover{
+            background-color: #5f54dd;
+            color: white;
+            
+            
+
+        }
+        & li:nth-child(4):hover{
+            background-color: #15b68e;
+            color: white;
+            
+            
+
+        }
+
+        & li:last-child{
+            margin-left: 10px;
+            color: white;
+            align-self: center;
+            border-radius: 30px;
+            background: rgb(147,231,54);
+            background: linear-gradient(310deg, rgba(147,231,54,1) 0%, rgba(114,213,68,1) 21%, rgba(19,161,108,1) 100%);
+            transition: .6s;
+        }
+
+        & li:last-child:hover{
+            scale: 1.1;
+        }
+    }
+
+}
+
+/* end of header */
+/* main */
+main{
+    height: 100vh;
+    background: url(./../img/Background-png.png) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    & .yellow_line{
+        font-weight: 500;
+        width: 100%;
+        background: #FBD748;
+        text-align: center;
+        padding: 20px;
+        transform: rotate(-3deg);
+        margin: 0px 0px 60px;
+    }
+}
+
+.main{
+    margin-bottom: 160px;
+
+    & .slogan_txt {
+        margin: auto;
+        text-align: center;
+        width: 60%;
+        & h1{
+            border-radius: 20px;
+
+            text-align: center;
+            font-size: 64px;
+            font-weight: 500;
+
+        }
+
+    }
+
+}
+
+/* end of Main */
+/* Our teachers sections */
+.top-teachers{
+    margin: 50px 0px;
+}
+.text_part{
+    padding: 20px 0px;
+    & p{
+        color: #000;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 125% */
+        
+    }
+    & h2{
+        font-weight: 500;
+        margin: 10px 0px;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 86px; 
+    }
+}
+
+
+.grid-teachers{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    overflow: hidden;
+    padding: 30px 0px;
+
+    & .thc_box{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        font-size: 24px;
+        
+        &  img{
+            width: 100%;
+            object-fit: cover;
+            scale: 1.1;
+            filter: grayscale(100);
+            transition: .6s;
+        }
+
+        & .teacher-data{
+            transition: .6s ;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            height: 40%;
+            width: 100%;
+            position: absolute;
+            bottom: -100%;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,161,108,0) 100%);
+        }
+        
+    
+    }
+}
+.thc_box:hover .teacher-data{
+    bottom: 0;
+}
+
+.thc_box:hover img{
+    filter: grayscale(0);
+}
+
+/* End of Teachers */
+/* world-txt */
+
+.world-wide{
+    padding: 100px 0px;
+    
+}
+
+.world-txt{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .txt-world{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        & h2 {
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        & .little_txt_box{
+            display: flex;
+            align-items: center;
+            margin: 30px 0px;
+            width: 50%;
+            
+            & p{
+                color: #000;
+                font-family: Rubik;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+                padding: 0px 0px 100px;
+            }
+
+            & img{
+                height: 300px;
+                margin-right: 24px;
+            }
+
+        }
+        
+    }
+
+
+}
+.world-txt > img{
+    padding: 20px;
+    width: 50%;
+
+}
+
+/* end of Section of World  */
+/* Register info */
+
+.resgister-infprmation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .register_txt{
+        width: 50%;
+        & h2{
+            color: #000;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 86px; 
+        }
+
+        & p{
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; 
+        }
+    }
+}
+
+
+/* End of Register info */
+.course{
+    height: 80vh;
+}
+.courses-box-wraper{
+
+    background-image: url(./../img/message\ box.png);
+}
+
+
